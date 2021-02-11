@@ -465,6 +465,9 @@ void atkFF09_jumpifcounter(void)
 		case Counters_TarShot:
 			counter = gNewBS->tarShotBits & gBitTable[bank];
 			break;
+		case Counters_EchoChamber:
+			counter = gNewBS->EchoChamberCounter[bank];
+			break;
 		default:
 			counter = 0; //Shouldn't happen...
 	}
@@ -583,6 +586,9 @@ void atkFF0E_setcounter(void)
 			break;
 		case Counters_TarShot:
 			gNewBS->tarShotBits |= gBitTable[bank];
+			break;
+		case Counters_EchoChamber:
+			counter = gNewBS->EchoChamberCounter[bank];
 			break;
 	}
 
@@ -1260,10 +1266,13 @@ void atkFF26_attackstringnoprotean(void)
 			if (!CheckTableForMove(gCurrentMove, gMovesThatCallOtherMoves))
 			{
 				u8 chargingBonus = 20 * gNewBS->metronomeItemBonus[gBankAttacker];
+				u8 chargingBonus = 20 * gNewBS->echoChamberItemBonus[gBankAttacker];				
 				if (gLastPrintedMoves[gBankAttacker] == gCurrentMove)
 					gNewBS->MetronomeCounter[gBankAttacker] = MathMin(100, gNewBS->MetronomeCounter[gBankAttacker] + 20 + chargingBonus);
+					gNewBS->EchoChamberCounter[gBankAttacker] = MathMin(100, gNewBS->EchoChamberCounter[gBankAttacker] + 20 + chargingBonus);
 				else
 					gNewBS->MetronomeCounter[gBankAttacker] = 0 + chargingBonus;
+					gNewBS->EchoChamberCounter[gBankAttacker] = 0 + chargingBonus;
 			}
 		}
 
