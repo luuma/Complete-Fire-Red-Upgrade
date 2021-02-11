@@ -3262,7 +3262,7 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 			if (data->moveType == TYPE_WATER)
 				power *= 2; //2x Boost
 			break;
-
+		
 		case ABILITY_ANALYTIC:
 		//1.3x Boost
 			if (BankMovedBefore(bankDef, bankAtk))
@@ -3274,6 +3274,16 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 			if (CheckSoundMove(move))
 				power = (power * 13) / 10;
 			break;
+			
+		case ABILITY_ECHO_CHAMBER:
+		//1.2x - 2.0x Boost
+			if (!useMonAtk)
+			{
+				u16 boost = MathMin(200, 100 + gNewBS->EchoChamberCounter[bankAtk]);
+				power = (power * boost) / 100;
+			}
+			break;
+		
 	}
 
 	//Check attacker partner ability boost
