@@ -1187,7 +1187,15 @@ u8 CalcMoveSplit(u8 bank, u16 move)
 		else
 			return SPLIT_PHYSICAL;
 	}
-
+	if (ITEM_EFFECT(bank) == ITEM_EFFECT_SPECIALISER)
+	{
+		if (SPLIT(move) == SPLIT_PHYSICAL)
+			return SPLIT_SPECIAL;
+		else if (SPLIT(move) == SPLIT_SPECIAL)
+			return SPLIT_PHYSICAL;	
+		else
+			return SPLIT(move); //return status for status moves
+	}
 	#ifdef OLD_MOVE_SPLIT
 		if (gBattleMoves[move].type < TYPE_FIRE)
 			return SPLIT_PHYSICAL;
