@@ -1,5 +1,19 @@
 #pragma once
 
+
+//Adding some new shit
+#define ITEM_STAR_SWEET 0x2D2
+#define ITEM_SPECIALISER 0x2D3
+#define ITEM_2 0x2D4
+#define ITEM_3 0x2D5
+#define ITEM_4 0x2D6
+#define ITEM_5 0x2D7
+#define ITEM_6 0x2D8
+#define ITEM_7 0x2D9
+
+#define ITEMS_COUNT (ITEM_STAR_SWEET + 1)
+
+
 #define ITEM_NONE 0
 #define ITEM_MASTER_BALL 1
 #define ITEM_ULTRA_BALL 2
@@ -858,6 +872,8 @@ enum
 #define ITEM_THROAT_SPRAY 0x2C5
 #define ITEM_RUSTED_SWORD 0x2C6
 #define ITEM_RUSTED_SHIELD 0x2C7
+
+
 
 #define ITEMS_COUNT (ITEM_STAR_SWEET + 1)
 
