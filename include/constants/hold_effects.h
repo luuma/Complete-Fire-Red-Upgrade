@@ -1,5 +1,18 @@
 #pragma once
 
+#define ITEM_EFFECT_THROAT_SPRAY 137
+#define ITEM_EFFECT_SPECIALISER 138
+#define ITEM_EFFECT_2 139
+#define ITEM_EFFECT_3 140
+#define ITEM_EFFECT_4 141
+#define ITEM_EFFECT_5 142
+#define ITEM_EFFECT_6 143
+#define ITEM_EFFECT_7 144
+#define ITEM_EFFECT_COUNT (ITEM_EFFECT_7 + 1)
+
+
+
+
 //#define ITEM_EFFECT_NONE            0
 #define ITEM_EFFECT_RESTORE_HP      1
 #define ITEM_EFFECT_CURE_PAR        2
