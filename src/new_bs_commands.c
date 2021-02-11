@@ -355,6 +355,12 @@ void atkFF08_counterclear(void)
 			else
 				failed = TRUE;
 			break;
+		case Counters_EchoChamber:
+			if (gNewBS->EchoChamberCounter[bank])
+				gNewBS->EchoChamberCounter[bank] = 0;
+			else
+				failed = TRUE;
+			break;
 		case Counters_Incinerate:
 			if (gNewBS->IncinerateCounters[bank])
 				gNewBS->IncinerateCounters[bank] = 0;
