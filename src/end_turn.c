@@ -1604,6 +1604,9 @@ u8 TurnBasedEffects(void)
 
 					if (gNewBS->metronomeItemBonus[i] > 0)
 						--gNewBS->metronomeItemBonus[i];
+					
+					if (gNewBS->echoChamberItemBonus[i] > 0)
+						--gNewBS->echoChamberItemBonus[i];
 
 					if (gNewBS->dynamaxData.timer[i] > 0)
 					{
