@@ -79,6 +79,7 @@ const u16 gMissStringIds[] =
 	0x184, //Raid Shield
 };
 
+
 static const u8* const sEntryHazardsStrings[] =
 {
 	SpikesLayString,
