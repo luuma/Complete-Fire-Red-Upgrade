@@ -1133,6 +1133,7 @@ void ClearSwitchBytes(u8 bank)
 	gNewBS->ThroatChopTimers[bank] = 0;
 	gNewBS->StompingTantrumTimers[bank] = 0;
 	gNewBS->MetronomeCounter[bank] = 0;
+	gNewBS->EchoChamberCounter[bank] = 0;
 	gNewBS->DestinyBondCounters[bank] = 0;
 	gNewBS->SlowStartTimers[bank] = 0;
 	gNewBS->IncinerateCounters[bank] = 0;
