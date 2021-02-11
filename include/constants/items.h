@@ -1,6 +1,10 @@
 #pragma once
 
 
+//#define ITEM_GALARICA_CUFF 0x2D3 //wh
+//#define ITEM_GALARICA_CROWN 0x2D4 //Placeholder name for G-Slowking item
+
+
 //Adding some new shit
 #define ITEM_STAR_SWEET 0x2D2
 #define ITEM_SPECIALISER 0x2D3
@@ -11,7 +15,7 @@
 #define ITEM_6 0x2D8
 #define ITEM_7 0x2D9
 
-#define ITEMS_COUNT (ITEM_STAR_SWEET + 1)
+#define ITEMS_COUNT (ITEM_7 + 1)
 
 
 #define ITEM_NONE 0
@@ -791,8 +795,6 @@ enum
 #define ITEM_FLOWER_SWEET 0x2D0
 #define ITEM_RIBBON_SWEET 0x2D1
 #define ITEM_STAR_SWEET 0x2D2
-#define ITEM_GALARICA_CUFF 0x2D3
-#define ITEM_GALARICA_CROWN 0x2D4 //Placeholder name for G-Slowking item
 
 //New Key Items
 #define ITEM_GRACIDEA 0x217
@@ -872,10 +874,6 @@ enum
 #define ITEM_THROAT_SPRAY 0x2C5
 #define ITEM_RUSTED_SWORD 0x2C6
 #define ITEM_RUSTED_SHIELD 0x2C7
-
-
-
-#define ITEMS_COUNT (ITEM_STAR_SWEET + 1)
 
 //For Pokemon Unbound
 #ifdef UNBOUND
