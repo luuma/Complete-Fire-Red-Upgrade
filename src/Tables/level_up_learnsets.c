@@ -18956,9 +18956,9 @@ static const struct LevelUpMove sStunfiskGLevelUpLearnset[] = {
 const struct LevelUpMove* const gLevelUpLearnsets[] =
 {
 	[SPECIES_NONE] = sEmptyMoveset,
-	[SPECIES_BULBASAUR] = sParopeatLevelUpLearnset,
-	[SPECIES_IVYSAUR] = sMacaumentLevelUpLearnset,
-	[SPECIES_VENUSAUR] = sArguwintLevelUpLearnset,
+	[SPECIES_BULBASAUR] = sParopeatLevelUpLearnset, //[species_bulbasaur] is literally "1", Ivysaur is "2" and so on. 
+	[SPECIES_IVYSAUR] = sMacaumentLevelUpLearnset, //We can leave these as "bulbasaur" and "ivysaur" as long as we don't
+	[SPECIES_VENUSAUR] = sArguwintLevelUpLearnset,//lose track of the dex number of the mons and their movesets.
 	[SPECIES_CHARMANDER] = sPrimatioLevelUpLearnset,
 	[SPECIES_CHARMELEON] = sOpinimpLevelUpLearnset,
 	[SPECIES_CHARIZARD] = sTemperilaLevelUpLearnset,
