@@ -1111,6 +1111,11 @@ TYPE_LOOP:
 		moveType = TYPE_FLYING;
 		goto TYPE_LOOP;
 	}
+	if (move == MOVE_MOBMENTALITY && moveType != TYPE_ICE)
+	{
+		moveType = TYPE_ICE;
+		goto TYPE_LOOP_AI;
+	}
 }
 
 void TypeDamageModificationPartyMon(u8 atkAbility, struct Pokemon* monDef, u16 move, u8 moveType, u8* flags)
