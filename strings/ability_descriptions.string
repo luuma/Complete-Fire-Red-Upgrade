@@ -542,3 +542,7 @@ Protects team from poison.
 
 #org @DESC_HUNGERSWITCH
 Changes form each turn.
+
+
+#org @DESC_ECHO_CHAMBER
+Repeat moves to raise power.
