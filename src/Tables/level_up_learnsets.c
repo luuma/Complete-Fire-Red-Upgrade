@@ -321,6 +321,7 @@ static const struct LevelUpMove sActurunkLevelUpLearnset[] = {
 
 static const struct LevelUpMove sDramaspireLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(0, MOVE_SHADOWSNEAK),
+	LEVEL_UP_MOVE(1, MOVE_SHADOWSNEAK),
 	LEVEL_UP_MOVE( 1, MOVE_SUCKERPUNCH),
 	LEVEL_UP_MOVE( 1, MOVE_HYPERVOICE),
 	LEVEL_UP_MOVE( 1, MOVE_ROLEPLAY),
