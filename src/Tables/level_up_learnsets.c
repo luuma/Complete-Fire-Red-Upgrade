@@ -367,6 +367,7 @@ static const struct LevelUpMove sBurrobitLevelUpLearnset[] = {
 static const struct LevelUpMove sBunnaetherLevelUpLearnset[] = {
         LEVEL_UP_MOVE( 0, MOVE_TAILWIND),
         LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
+	LEVEL_UP_MOVE( 1, MOVE_FAKEOUT),
         LEVEL_UP_MOVE( 1, MOVE_QUICKATTACK),
         LEVEL_UP_MOVE( 1, MOVE_SANDATTACK),
         LEVEL_UP_MOVE( 4, MOVE_DOUBLETEAM),
