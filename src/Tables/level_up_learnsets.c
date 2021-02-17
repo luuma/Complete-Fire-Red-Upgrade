@@ -345,9 +345,7 @@ static const struct LevelUpMove sDramaspireLevelUpLearnset[] = {
 	LEVEL_UP_END,
 };
 
-static const struct LevelUpMove sBunnaetherLevelUpLearnset[] = {
-        LEVEL_UP_MOVE( 0, MOVE_TAILWIND),
-        LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
+static const struct LevelUpMove sBurrobitLevelUpLearnset[] = {
         LEVEL_UP_MOVE( 1, MOVE_QUICKATTACK),
         LEVEL_UP_MOVE( 1, MOVE_SANDATTACK),
         LEVEL_UP_MOVE( 4, MOVE_DOUBLETEAM),
@@ -19045,7 +19043,7 @@ static const struct LevelUpMove sStunfiskGLevelUpLearnset[] = {
 const struct LevelUpMove* const gLevelUpLearnsets[] =
 {
 	[SPECIES_NONE] = sEmptyMoveset,
-	[SPECIES_BULBASAUR] = sParopeatLevelUpLearnset, //[species_bulbasaur] is literally "1", Ivysaur is "2" and so on. 
+	[SPECIES_BULBASAUR] = sParopeatLevelUpLearnset, //[species_bulbasaur] is literally defined as the number "1", Ivysaur is "2" and so on. 
 	[SPECIES_IVYSAUR] = sMacaumentLevelUpLearnset, //We can leave these as "bulbasaur" and "ivysaur" as long as we don't
 	[SPECIES_VENUSAUR] = sArguwintLevelUpLearnset,//lose track of the dex number of the mons and their movesets.
 	[SPECIES_CHARMANDER] = sPrimatioLevelUpLearnset,
@@ -19059,8 +19057,8 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_BUTTERFREE] = sElecreepLevelUpLearnset,
 	[SPECIES_WEEDLE] = sActurunkLevelUpLearnset,
 	[SPECIES_KAKUNA] = sDramaspireLevelUpLearnset,
-	[SPECIES_BEEDRILL] = sBeedrillLevelUpLearnset,
-	[SPECIES_PIDGEY] = sPidgeyLevelUpLearnset,
+	[SPECIES_BEEDRILL] = sBurrobitLevelUpLearnset,
+	[SPECIES_PIDGEY] = sBunnaetherLevelUpLearnset,
 	[SPECIES_PIDGEOTTO] = sPidgeottoLevelUpLearnset,
 	[SPECIES_PIDGEOT] = sPidgeotLevelUpLearnset,
 	[SPECIES_RATTATA] = sRattataLevelUpLearnset,
