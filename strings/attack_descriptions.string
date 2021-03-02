@@ -1323,3 +1323,38 @@ Rapidly bombs the\ntarget with likes\nand dislikes,\ninverting stat gains.
 
 #org @DESC_LEGION_BASH
 The user summons their\nmost loyal channel\nmembers, hitting 1-3\ntimes
+
+#org @DESC_MICDROP
+The user passes on the\nmic and returns to\nthe party after\ndealing damage.
+#org @DESC_GUN
+Pulls a fucking gun\non the opponent,\nkilling them.
+
+#org @DESC_MORDANTACID
+Sprays acid that\nmelts Steel and may\npoison the foe.
+
+#org @DESC_BEARHUG
+Hugs the target\ntightly, trapping and\nlowering their Attack\nand Sp.Atk.
+
+#org @DESC_LENSFLARE
+Strikes first, but\nonly if the target\nattacks.
+
+#org @DESC_PIXIEPETAL
+Launches a flurry of\npetals at the foe,\nstarting Misty Terrain.
+
+#org @DESC_MINDPIECE
+Exposes the user's\nbrain, to frighten\and start Psychic\nTerrain.
+
+#org @DESC_LEADCANNON
+Fires an explosive\nshot that damages\nadjacent foes.\nGOODBYE DIRT.
+
+#org @DESC_PANICSWEAT
+The user swelters.\nRaises Defenses at\nabove half HP,\notherwise ups Speed.
+
+#org @DESC_PSYCHOUT
+Ambushes the foe,\n making them flinch.\nOnly works if user\njust switched in.
+
+#org @DESC_NARUTORUN
+Seemingly it's quicker\nto run like this.\nSharply boosts Speed\nand Accuracy.
+
+#org @DESC_MENTALSTRIKE
+Strikes intelligently\ndamaging based on\nSp.Def.
