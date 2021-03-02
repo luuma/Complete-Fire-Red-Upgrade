@@ -14586,7 +14586,7 @@ const struct BattleMove gBattleMoves[] =
 	
 	[MOVE_PIXIEPETAL] =
 	{
-		.effect = EFFECT_SET_TERRAIN,
+		.effect = EFFECT_DAMAGE_SET_TERRAIN,
 		.power = 60,
 		.type = TYPE_GRASS,
 		.accuracy = 100,
@@ -14602,7 +14602,7 @@ const struct BattleMove gBattleMoves[] =
 	
 	[MOVE_MINDPIECE] =
 	{
-		.effect = EFFECT_SET_TERRAIN,
+		.effect = EFFECT_DAMAGE_SET_TERRAIN,
 		.power = 60,
 		.type = TYPE_GHOST,
 		.accuracy = 100,
