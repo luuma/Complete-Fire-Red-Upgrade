@@ -744,6 +744,8 @@ gBallBombMoves:
 .hword MOVE_SLUDGEBOMB
 .hword MOVE_WEATHERBALL
 .hword MOVE_ZAPCANNON
+.hword MOVE_LEADCANNON
+.hword MOVE_GUN
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
