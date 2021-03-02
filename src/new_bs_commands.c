@@ -214,6 +214,7 @@ void atkFF06_setterrain(void)
 				gBattleStringLoader = GrassyTerrainSetString;
 				break;
 			case MOVE_MISTYTERRAIN:
+			case MOVE_PIXIEPETAL
 			SET_MISTY_TERRAIN:
 				type = MISTY_TERRAIN;
 				gBattleScripting.animArg1 = B_ANIM_MISTY_SURGE;
@@ -221,6 +222,7 @@ void atkFF06_setterrain(void)
 				break;
 			case MOVE_PSYCHICTERRAIN:
 			case MOVE_GENESIS_SUPERNOVA:
+			case MOVE_MINDPIECE:
 			SET_PSYCHIC_TERRAIN:
 				type = PSYCHIC_TERRAIN;
 				gBattleScripting.animArg1 = B_ANIM_PSYCHIC_SURGE;
