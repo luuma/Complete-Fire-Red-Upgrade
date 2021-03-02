@@ -1178,6 +1178,9 @@ static void ModulateDmgByType(u8 multiplier, const u16 move, const u8 moveType, 
 
 	if (move == MOVE_FREEZEDRY && defType == TYPE_WATER) //Always Super-Effective, even in Inverse Battles
 		multiplier = TYPE_MUL_SUPER_EFFECTIVE;
+	
+	if (move == MOVE_MORDANTACID && defType == TYPE_STEEL) //Always Super-Effective, even in Inverse Battles
+		multiplier = TYPE_MUL_SUPER_EFFECTIVE;
 
 	if (moveType == TYPE_FIRE && gNewBS->tarShotBits & gBitTable[bankDef]) //Fire always Super-Effective if covered in tar
 		multiplier = TYPE_MUL_SUPER_EFFECTIVE;
@@ -2348,6 +2351,11 @@ static s32 CalculateBaseDamage(struct DamageCalc* data)
 		damage *= spAttack;
 		damage /= MathMax(1, data->defense); //MathMax prevents underflow
 	}
+	if (move = MOVE_MENTALSTRIKE)
+	{
+		damage *= attack;
+		damage /= MathMax(1, data->spDefense); //MathMax prevents underflow
+	}
 	else
 	{
 		switch (data->moveSplit) {
@@ -3212,6 +3220,7 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 		case ABILITY_REFRIGERATE:
 		case ABILITY_GALVANIZE:
 		case ABILITY_NORMALIZE:
+		case ABILITY_TRIANGULATE:
 		//1.2x / 1.3x Boost
 			if ((!useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, gNewBS->ElectrifyTimers[bankAtk], TRUE, (gNewBS->zMoveData.active || gNewBS->zMoveData.viewing)))
 			||   (useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, 0, FALSE, FALSE)))
@@ -3227,6 +3236,11 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 		case ABILITY_MEGALAUNCHER:
 		//1.5x Boost
 			if (CheckTableForMove(move, gPulseAuraMoves))
+				power = (power * 15) / 10;
+			break;
+		case ABILITY_ARTILLERY:
+		//1.5x Boost
+			if (CheckTableForMove(move, gBallBombMoves) || CheckTableForMove(move, gPulseAuraMoves))
 				power = (power * 15) / 10;
 			break;
 
